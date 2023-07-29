@@ -28,23 +28,64 @@
           <ul id="MenuItems">
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Products</a></li>
-            <li><a href="#">About us</a></li>
+           <li> <a href="page.3/" onclick="pag3()">About us</a></li>
+            <script>
+        function pag3() {location.assign("page.3");
+            }
+            </script>
+            
+
+
           </ul>
         </nav>
         <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png"  width="30px" height="30px"></a>
-        <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/10533/10533008.png" alt="" width="30px" height="30px"></a>
-      </div>
+     <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/10533/10533008.png" alt="" width="30px" height="30px"></a>
+     
+    
+    
+    
+    </div>
       <div class="row">
         <div class="col-2">
-          <p>
+          <h5>
            Your jewellery makes <br />
             you elegant
-          </p>
+          </h5>
           <br> 
           <h2> New Summer 
             Necklace Collection</h2>
-            <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Explore Now →</a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                  <h1>Sign Up</h1>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
             
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                  </label>
+            
+                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            
+                  <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+     </script>
         </div>
         <div class="col-2">
           <img src="https://cdn-icons-png.flaticon.com/128/1650/1650808.png" alt="loggo" />
@@ -222,9 +263,9 @@
       <div class="row">
        
       </div>
-      <button onclick="page3()" class="btn1">Buy Now →</button>
+      <button onclick="page2()" class="btn1">Buy Now →</button>
       <script>
-  function page3() {location.assign("page3");
+  function page2() {location.assign("page2");
       }
       </script>
       
@@ -243,7 +284,7 @@
              <div class="footer-col-4">
               <ul class="social-list">
                 <li>
-                  <a href="#" class="social-link">
+                  <a href="https://www.facebook.com/people/Rimeh-jewellery/100093341773998/" class="social-link">
                     <ion-icon name="logo-facebook" role="img" class="md hydrated" aria-label="logo facebook"></ion-icon>
                   </a>
                 </li>

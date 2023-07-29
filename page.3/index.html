@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+</head>
+
+  <body>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <!-- Main div code -->
+  <form class="modal-content" action="/action_page.php">
+  <div id="main">
+  <div class="h-tag">
+  <h2>Create Your Account</h2>
+  </div>
+  <!-- create account div -->
+  <div class="login">
+  <table cellspacing="2" align="center" cellpadding="8" border="0">
+  <tr>
+  <td align="right">Enter Name :</td>
+  <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Email ID :</td>
+  <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Username :</td>
+  <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Password :</td>
+  <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Confirm Password :</td>
+  <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>
+    
+  <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+  <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+  </tr>
+  </table>
+  </div>
+
+  <!-- create account box ending here.. -->
+  </div></form>
+
+  <!-- Main div ending here... -->
+  <script src="script.js"></script>
+  </body>
+  </html>
